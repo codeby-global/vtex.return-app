@@ -52,7 +52,7 @@ interface PaymentOptionsProps extends ComponentPropsWithoutRef<'div'> {
   hasError: boolean
 }
 
-const PaymentOptions = forwardRef<HTMLDivElement, PaymentOptionsProps>(
+export const PaymentOptions = forwardRef<HTMLDivElement, PaymentOptionsProps>(
   ({ handleOptionSelection, hasError }, ref) => {
     const {
       appSettings,
@@ -162,7 +162,3 @@ const PaymentOptions = forwardRef<HTMLDivElement, PaymentOptionsProps>(
     )
   }
 )
-
-PaymentOptions.displayName = 'PaymentOptions'
-
-export default PaymentOptions
