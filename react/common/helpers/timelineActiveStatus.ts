@@ -1,7 +1,7 @@
 import type { requestsStatuses } from '../utils'
 
 // eslint-disable-next-line prettier/prettier
-type Status = (typeof requestsStatuses)[keyof typeof requestsStatuses]
+type Status = typeof requestsStatuses[keyof typeof requestsStatuses]
 
 type Request = {
   status: Status
